@@ -13,9 +13,6 @@ final CrossTalk-retained model used for the reported five-fold result.
 - validation, preprocessing, training, checkpoint evaluation, and tests;
 - a SHA-256 release manifest covering source, data, splits, and weights.
 
-Historical models, hyperparameter searches, ablations, multi-omics pilots,
-figures, manuscripts, and intermediate runs are intentionally excluded.
-
 ## Canonical configuration
 
 The final model uses `embed_dim=128`, `bond_k=3`, `cell_noise_std=0.05`,
