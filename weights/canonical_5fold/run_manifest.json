@@ -1,0 +1,71 @@
+{
+  "status": "COMPLETE",
+  "run_id": "20260908_225152_bafsynpred",
+  "model_version": "final",
+  "pipeline": "vectorized_collation_v1",
+  "fold_seed_policy": "base_seed_plus_fold_v1",
+  "fold_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "configuration": {
+    "csv_path": "data/10183_drug_feature_0_30.csv",
+    "cell_data_path": "data/10183_cell_features_977.npy",
+    "kfold_path": "data/kfold_splits_processed/5_fold_splits.npy",
+    "cache_dir": "data/cache/bafsynpred-final",
+    "num_features_xd": 117,
+    "num_features_xa": 55,
+    "num_features_xt": 977,
+    "embed_dim": 128,
+    "num_hyperedge_types": 6,
+    "hyperedge_attr_dim": 11,
+    "bond_k": 3,
+    "batch_size": 64,
+    "num_epochs": 200,
+    "lr": 0.0002,
+    "weight_decay": 0.0,
+    "early_stop_patience": 50,
+    "num_folds": 5,
+    "use_class_weighted_edl": true,
+    "edl_pos_weight_cap": 1.5,
+    "cell_noise_std": 0.05,
+    "cell_drug_dropout": 0.2,
+    "recon_weight": 0.01,
+    "adaptive_kl_beta": 0.5,
+    "grad_clip_norm": 1.0,
+    "seed": 42
+  },
+  "source_sha256": {
+    "src/bafsynpred/__init__.py": "d2d6829e92efa36757db2fcdad506e0c286e1aa8c27944b0ba3bdf1dc28e0d3d",
+    "src/bafsynpred/batching.py": "05c711c674f751270502793ab0bef410b5dad1d480a09476bab19afa2962a3f5",
+    "src/bafsynpred/chemistry.py": "e133cf460560c204c8b860adbf275662a38ed504f5d7148baa7afec2a03f99d0",
+    "src/bafsynpred/data.py": "e57f947402e4dcc4851a9ef4911e09bf993b15debf28f62dbebbd1cc0081e77d",
+    "src/bafsynpred/features.py": "1f338da1b098c1ab2629ea0eddb62c66b0435fdc1d0b7fde08aec2d1da8c7467",
+    "src/bafsynpred/losses.py": "e20baf588a1f128bb1fb2350b0c9f90a9f35715c158396d9389fbe572e781c6e",
+    "src/bafsynpred/metrics.py": "15f397a77dfb2ce7785a9e2122e109033e8b236ef955af526c5ca27690af232c",
+    "src/bafsynpred/model.py": "6f20b4a5c2e61c04ec37703f4e3e630d275dd4e52900eec2baebbf81cd0e8c07",
+    "src/bafsynpred/train.py": "dd531ade0d08bcd3087b172c6388eb79b2857ea225945c3e55286a4576debe92",
+    "src/bafsynpred/validation.py": "fc643d9be452290c1f0b41a560ddec820bbc03c2cdd6aa23c4b16e7aec16e213"
+  },
+  "data_sha256": {
+    "interactions": "803a50be850bf6963d2eea9604896987d87412812d47b6236ed553e8ed06fb5a",
+    "cell_features": "e4f1885b2957c49d13cfa2d180e674f7afee1e5f9dfeb4c7b780177b4f137b2d",
+    "folds": "8dcbe69ead8d3283d7b9c173919750d323fd46775af9f115b541c5efdbbab5aa"
+  },
+  "environment": {
+    "python": "3.7.12",
+    "pytorch": "1.13.0",
+    "cuda_runtime": "11.6",
+    "device": "cuda",
+    "process_priority": "High"
+  },
+  "elapsed_min": 118.546,
+  "timing": {
+    "training_wall_minutes": 118.546,
+    "run_wall_minutes": 118.553
+  },
+  "summary_file": "experiment_summary.json"
+}

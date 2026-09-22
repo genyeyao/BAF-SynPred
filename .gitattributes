@@ -1,0 +1,9 @@
+*.npy binary
+*.pt binary
+*.pth binary
+*.csv text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.ps1 text eol=crlf
+

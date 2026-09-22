@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "samples": 10183,
+  "label_counts": {
+    "0": 8290,
+    "1": 1893
+  },
+  "cell_lines": 37,
+  "cell_dimension": 977,
+  "unique_molecules": 38,
+  "multi_fragment_molecules": 3,
+  "fold_sizes": [
+    {
+      "fold": 0,
+      "train": 8146,
+      "validation": 2037
+    },
+    {
+      "fold": 1,
+      "train": 8146,
+      "validation": 2037
+    },
+    {
+      "fold": 2,
+      "train": 8146,
+      "validation": 2037
+    },
+    {
+      "fold": 3,
+      "train": 8147,
+      "validation": 2036
+    },
+    {
+      "fold": 4,
+      "train": 8147,
+      "validation": 2036
+    }
+  ],
+  "sha256": {
+    "interactions": "803a50be850bf6963d2eea9604896987d87412812d47b6236ed553e8ed06fb5a",
+    "cell_features": "e4f1885b2957c49d13cfa2d180e674f7afee1e5f9dfeb4c7b780177b4f137b2d",
+    "folds": "8dcbe69ead8d3283d7b9c173919750d323fd46775af9f115b541c5efdbbab5aa"
+  }
+}
